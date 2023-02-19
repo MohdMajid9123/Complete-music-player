@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+
+/* main_container code*/
+.main_div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  overflow-x: hidden;
+  height: 100vh;
+  background-color: #2f3542;
+}
+/* music_container code */
+.music_container {
+  width: 35rem;
+  height: 40rem;
+  box-shadow: 0 1.2rem 2rem 0.1rem rgba(0, 0, 0, 0.2);
+  padding: 2rem;
+  text-align: center;
+  border-radius: 1rem;
+  background-color: #3e4554;
+  color: #fff;
+}
+/* music container title code */
+.music_container #title {
+  font-size: 3rem;
+  text-shadow: 0 0.4rem 0.5rem rgba(0, 0, 0, 0.5);
+  margin: 0rem 0 0.5rem 0;
+  letter-spacing: 0.3rem;
+}
+/* music container artist code */
+
+.music_container #artist {
+  font-size: 2rem;
+  color: #beacac;
+  margin-bottom: 1rem;
+}
+/* image container code */
+.img_container {
+  width: 20rem;
+  height: 20rem;
+  margin: auto;
+}
+.img_container img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 1.2rem 2rem 0.1rem rgba(0, 0, 0, 0.2);
+}
+
+/* music controls code */
+
+.music_controls {
+  width: 20rem;
+  margin: auto;
+  /* margin-top: 1rem; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.music_controls .fa-solid {
+  font-size: 2rem;
+  color: #fff;
+  cursor: pointer;
+}
+.music_controls .fa-solid:hover {
+  color: #e8dbdb;
+}
+
+.music_controls #play {
+  background-color: #130f40;
+  width: 3.5rem;
+  height: 3.5rem;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.music_controls #play:hover {
+  background-color: #fff;
+  color: #130f40;
+  box-shadow: 0 1.2rem 2rem 0.1rem rgba(0, 0, 0, 0.2);
+}
+
+/* animation */
+.anim {
+  animation: rotateImg 3s linear infinite;
+}
+
+@keyframes rotateImg {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* progressbar_container */
+
+.progressbar_container {
+  width: 100%;
+  height: auto;
+  /* padding: 1rem 0; */
+  /* margin-top: 1rem; */
+  margin-bottom: 2rem;
+}
+.progress_div {
+  width: 100%;
+  height: 0.5rem;
+  border-radius: 4rem;
+  position: relative;
+  margin-top: 0.5rem;
+  transition: width 1s linear;
+  -moz-transition: width 1s linear;
+  -o-transition: width 1s linear;
+  -webkit-transition: width 1s linear;
+  -webkit-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  /* box-shadow: 0 1rem 0.5rem gray; */
+  background-color: #ffffff;
+}
+.progress {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: black;
+  border-radius: 4rem;
+  cursor: pointer;
+}
+
+.progress_duration_meter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.8rem;
+}
